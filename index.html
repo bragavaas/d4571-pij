@@ -1067,21 +1067,10 @@ dialog.modal::backdrop{background:rgba(0,0,0,.5)}
 <header class="header">
   <div class="container">
     <a class="logo-link" href="#/" data-rota-link aria-label="Rotary Distrito 4571 — Intercâmbio Rotário da Amizade. Ir para a página inicial.">
-      <!-- LOCKUP OFICIAL DO PROGRAMA (aproximação em SVG para o protótipo):
-           "Rotary" + roda dourada, "Distrito 4571" abaixo do wordmark,
-           filete vertical e "Intercâmbio Rotário da Amizade" em três linhas
-           (Azure / Gold / Royal). ANTES DE PUBLICAR, substituir este desenho
-           pelo ARQUIVO OFICIAL do lockup (PNG/SVG fornecido pela Comissão)
-           — a palavra "Rotary" jamais deve ser redigitada. -->
-      <svg class="logo-lockup" viewBox="0 0 395 150" role="img" aria-hidden="true" focusable="false">
-        <text x="0" y="90" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="44" font-weight="700" letter-spacing="-1" fill="#17458F">Rotary</text>
-        <use href="#i-roda" x="132" y="35" width="80" height="80" color="#F7A81B"></use>
-        <text x="0" y="122" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="24" font-weight="400" fill="#17458F">Distrito 4571</text>
-        <rect x="245" y="30" width="2" height="100" fill="#898A8D"></rect>
-        <text x="269" y="62" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#0067C8">Intercâmbio</text>
-        <text x="269" y="87" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#F7A81B">Rotário da</text>
-        <text x="269" y="112" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#17458F">Amizade</text>
-      </svg>
+      <!-- LOCKUP OFICIAL DO PROGRAMA — arquivo PNG fornecido pela Comissão
+           (assets/logo-oficial.png, recorte das margens em branco do
+           original, sem qualquer alteração na arte). -->
+      <img class="logo-lockup" src="assets/logo-oficial.png" alt="" width="723" height="183">
     </a>
 
     <nav class="nav-principal" aria-label="Navegação principal">
@@ -3534,18 +3523,13 @@ dialog.modal::backdrop{background:rgba(0,0,0,.5)}
     </div>
 
     <div class="rodape-legal">
-      <!-- Lockup oficial, versão para fundo escuro: textos brancos, roda
-           dourada, filete branco (aproximação — substituir pelo arquivo
-           oficial na publicação) -->
-      <svg viewBox="0 0 395 150" role="img" aria-label="Rotary Distrito 4571 — Intercâmbio Rotário da Amizade" style="height:3.6rem;width:auto" focusable="false">
-        <text x="0" y="90" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="44" font-weight="700" letter-spacing="-1" fill="#FFFFFF">Rotary</text>
-        <use href="#i-roda" x="132" y="35" width="80" height="80" color="#F7A81B"></use>
-        <text x="0" y="122" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="24" font-weight="400" fill="#FFFFFF">Distrito 4571</text>
-        <rect x="245" y="30" width="2" height="100" fill="#FFFFFF"></rect>
-        <text x="269" y="62" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Intercâmbio</text>
-        <text x="269" y="87" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#F7A81B">Rotário da</text>
-        <text x="269" y="112" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Amizade</text>
-      </svg>
+      <!-- Lockup oficial (PNG da Comissão). Como só existe a versão colorida,
+           o logo fica sobre uma placa branca para legibilidade no fundo Royal
+           Blue — a arte em si não é alterada. Se houver versão para fundo
+           escuro, basta trocar o arquivo. -->
+      <span style="display:inline-block;background:var(--branco);border-radius:var(--raio-md);padding:.6rem .9rem">
+        <img src="assets/logo-oficial.png" alt="Rotary Distrito 4571 — Intercâmbio Rotário da Amizade" width="723" height="183" style="height:3.2rem;width:auto;display:block">
+      </span>
       <p class="rodape-roda"><span><strong>Intercâmbio de Jovens — Distrito 4571</strong> · YEP D4571<br>Criando Impacto Duradouro. Rio de Janeiro e São Paulo.</span></p>
       <p>Este site é mantido por voluntários do Distrito 4571 do Rotary International. · <a href="#/privacidade" data-rota-link>Política de Privacidade e LGPD</a> · <button type="button" id="abrir-demo" style="color:var(--rotary-powder-blue);text-decoration:underline;font-size:inherit">Demonstração de estados do ciclo (protótipo)</button></p>
       <p>Contato: (12) 3621-9440 · WhatsApp (12) 98155-2955 · <span class="pendente">e-mail institucional a confirmar</span></p>
